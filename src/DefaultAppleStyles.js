@@ -14,7 +14,7 @@ const DefaultAppleStyles = {
     display: "block",
     fontWeight: 400,
     margin: "0px",
-    color: "#555555",
+    color: "#555555"
   },
   header: {
     display: "flex"
@@ -73,7 +73,7 @@ const DefaultAppleStyles = {
     display: "block",
     fontWeight: 400,
     margin: "0px",
-    color: "#555555",
+    color: "#555555"
   },
   notificationActions: {
     listStyleType: "none",
@@ -82,7 +82,8 @@ const DefaultAppleStyles = {
     "& li": {
       padding: "15px",
       marginBottom: "1px",
-      backgroundColor: "white"
+      backgroundColor: "white",
+      textAlign: "center"
     },
     "& li:first-child": {
       borderRadius: "15px 15px 0px 0px"
