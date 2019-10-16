@@ -86,10 +86,12 @@ const DefaultAppleStyles = {
       textAlign: "center"
     },
     "& li:first-child": {
-      borderRadius: "15px 15px 0px 0px"
+      borderTopLeftRadius: "15px",
+      borderTopRightRadius: "15px"
     },
     "& li:last-child": {
-      borderRadius: "0px 0px 15px 15px"
+      borderBottomLeftRadius: "15px",
+      borderBottomRightRadius: "15px"
     }
   },
   notificationActionsButton: {
