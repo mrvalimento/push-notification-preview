@@ -1,6 +1,6 @@
 {
   "name": "push-notification-preview",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A Material UI based react component for previewing iOS and Android push notifications.",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mvalimento/push-preview.git"
+    "url": "https://github.com/mvalimento/push-notification-preview.git"
   },
   "keywords": [
     "push",
@@ -24,8 +24,9 @@
   "files": [
     "dist/*"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "react": "^16.10.0",
+    "webfontloader": "^1.6.28",
     "@material-ui/core": "^4.4.3",
     "@material-ui/icons": "^4.4.3",
     "lodash": "^4.17.15",
@@ -42,12 +43,5 @@
   },
   "author": "mvalimento",
   "license": "MIT",
-  "homepage": "https://github.com/mvalimento/push-preview",
-  "dependencies": {
-    "@material-ui/core": "^4.5.0",
-    "@material-ui/icons": "^4.4.3",
-    "emoji-mart": "^2.11.1",
-    "emoji-regex": "^8.0.0",
-    "lodash": "^4.17.15"
-  }
+  "homepage": "https://github.com/mvalimento/push-notification-preview"
 }

@@ -1,28 +1,25 @@
 const DefaultAndroidStyles = {
   root: {
-    minWidth: "450px",
-    color: "#555555",    
+    color: "#555555",
     fontFamily: "Roboto",
+    minWidth: "325px"
+  },
+  cardNotification: {
+    backgroundColor: "white",
+    borderRadius: "20px 20px 0px 0px",
+    padding: "16px 24px",
+    fontSize: "16px",
+    lineHeight: "24px",
+    fontWeight: 400,
+    letterSpacing: "0.1px",
+    margin: "0px",
+    display: "block",
+    textAlign: "left"
   },
   header: {
     fontSize: "14px",
     display: "flex"
   },
-  cardNotification: {
-    backgroundColor: "white",
-    borderRadius: "20px 20px 0px 0px",
-    padding: "16px 24px"
-  },
-  cardFooter: {
-    backgroundColor: "white",
-    borderRadius: "0px 0px 20px 20px",
-    padding: "16px 24px",
-    fontWeight: 600,
-    color: "gray",
-    fontSize: "14px",
-    marginTop: "1px"
-  },
-  container: {},
   appIcon: {
     width: "18px",
     height: "18px",
@@ -32,47 +29,62 @@ const DefaultAndroidStyles = {
     width: "15px",
     height: "15px"
   },
-  notificationPreview: {
-    display: "block",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    margin: "0px",
-    overflow: "hidden",
-    textAlign: "left"
-  },
   notificationTitle: {
-    color: "#111111",
-    fontSize: "16px",
-    lineHeight: "24px",
-    fontWeight: 500,
-    letterSpacing: "0.1px",
-    display: "block",
+    fontWeight: 600,
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
-    margin: "0px",
+    marginBottom: "5px",
+    overflow: "hidden"
+  },
+  notificationPreview: {
     overflow: "hidden",
-    textAlign: "left"
+    display: "block",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap"
   },
   notificationMessage: {
-    fontSize: "16px",
-    lineHeight: "24px",
-    fontWeight: 400,
-    letterSpacing: "0.1px",
-    margin: "0px",
     overflow: "hidden",
-    textAlign: "left",
     display: "-webkit-box",
     "-webkit-line-clamp": 3,
     "-webkit-box-orient": "vertical"
   },
-  actionButtonContainer: {
-    backgroundColor: "#eeeeee",
-    padding: "16px 8px"
+  notificationMessagePreview: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    "-webkit-line-clamp": 1,
+    "-webkit-box-orient": "vertical"
   },
-  actionButton: {
-    color: "#636363",
-    fontSize: "15px",
-    textTransform: "capitalize"
+  notificationActionsContainer: {
+    marginTop: "10px"
+  },
+  notificationActions: {
+    textTransform: "capitalize",
+    fontWeight: 800,
+    fontSize: "15px"
+  },
+  notificationImagePreview: {
+    float: "right",
+    height: "60px",
+    width: "60px",
+    backgroundPosition: "center center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat"
+  },
+  notificationImage: {
+    width: "100%",
+    height: "175px",
+    backgroundPosition: "center bottom",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat"
+  },
+  cardFooter: {
+    backgroundColor: "white",
+    borderRadius: "0px 0px 20px 20px",
+    padding: "16px 24px",
+    fontWeight: 600,
+    color: "gray",
+    fontSize: "14px",
+    marginTop: "2px"
   }
 };
 export default DefaultAndroidStyles;

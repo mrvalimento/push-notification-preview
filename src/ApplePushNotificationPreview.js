@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
-import AndroidRegularPushNotificationPreview from "./AndroidRegularPushNotificationPreview";
-import AndroidRichPushNotificationPreview from "./AndroidRichPushNotificationPreview";
-import DefaultAndroidStyles from "./DefaultAndroidStyles";
+import AppleRegularPushNotificationPreview from "./AppleRegularPushNotificationPreview";
+import AppleRichPushNotificationPreview from "./AppleRichPushNotificationPreview";
+import DefaultAppleStyles from "./DefaultAppleStyles";
 import { checkIfEmojiPresent } from "./EmojiProcessor";
 
-class AndroidPushNotificationPreview extends React.Component {
+class ApplePushNotificationPreview extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,14 +26,14 @@ class AndroidPushNotificationPreview extends React.Component {
 
     return (
       <React.Fragment>
-        {!richPush && <AndroidRegularPushNotificationPreview {...this.props} />}
-        {richPush && <AndroidRichPushNotificationPreview {...this.props} />}
+        {!richPush && <AppleRegularPushNotificationPreview {...this.props} />}
+        {richPush && <AppleRichPushNotificationPreview {...this.props} />}
       </React.Fragment>
     );
   }
 }
 
-AndroidPushNotificationPreview.propTypes = {
+ApplePushNotificationPreview.propTypes = {
   actionButtons: PropTypes.arrayOf(PropTypes.string),
   appName: PropTypes.string,
   color: PropTypes.string,
@@ -43,4 +43,4 @@ AndroidPushNotificationPreview.propTypes = {
   title: PropTypes.string
 };
 
-export default withStyles(DefaultAndroidStyles)(AndroidPushNotificationPreview);
+export default withStyles(DefaultAppleStyles)(ApplePushNotificationPreview);
