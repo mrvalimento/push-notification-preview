@@ -6,7 +6,6 @@ import Notifications from "@material-ui/icons/Notifications";
 import KeyboardArrowUp from "@material-ui/icons/KeyboardArrowUp";
 import KeyboardArrowDown from "@material-ui/icons/KeyboardArrowDown";
 import DefaultAndroidStyles from "./DefaultAndroidStyles";
-import { parseEmojis } from "./EmojiProcessor";
 
 class AndroidRegularPushNotificationPreview extends React.Component {
   constructor(props) {
@@ -93,7 +92,7 @@ class AndroidRegularPushNotificationPreview extends React.Component {
                 <Grid container alignItems="flex-start">
                   <Grid item xs={12}>
                     <Grid item xs={12} className={classes.notificationTitle}>
-                      {parseEmojis(title, "google")}
+                      {title}
                     </Grid>
                     {message && (
                       <Grid
@@ -105,7 +104,7 @@ class AndroidRegularPushNotificationPreview extends React.Component {
                             : classes.notificationMessagePreview
                         }
                       >
-                        {parseEmojis(message, "google")}
+                        {message}
                       </Grid>
                     )}
                   </Grid>

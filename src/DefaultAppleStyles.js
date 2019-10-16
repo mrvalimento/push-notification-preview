@@ -1,6 +1,5 @@
 const DefaultAppleStyles = {
   root: {
-    color: "#555555",
     fontFamily: "Roboto",
     minWidth: "325px"
   },
@@ -14,7 +13,8 @@ const DefaultAppleStyles = {
     textAlign: "left",
     display: "block",
     fontWeight: 400,
-    margin: "0px"
+    margin: "0px",
+    color: "#555555",
   },
   header: {
     display: "flex"
@@ -72,7 +72,8 @@ const DefaultAppleStyles = {
     textAlign: "left",
     display: "block",
     fontWeight: 400,
-    margin: "0px"
+    margin: "0px",
+    color: "#555555",
   },
   notificationActions: {
     listStyleType: "none",

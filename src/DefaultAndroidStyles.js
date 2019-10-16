@@ -27,7 +27,8 @@ const DefaultAndroidStyles = {
   },
   controlIcon: {
     width: "15px",
-    height: "15px"
+    height: "15px",    
+    color: "#555555",
   },
   notificationTitle: {
     fontWeight: 600,

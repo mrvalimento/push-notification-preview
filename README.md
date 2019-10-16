@@ -4,6 +4,7 @@ This package is a push notification preview component based on Material-UI.
 The layouts are based on iOS13 and Android Pie.
 
 - Provides a preview for regular push notifications on Android devices (including emoticons!)
+- Message and title fields accept string with emojis in unicode and translates them to its Android / iOS counterparts
 
 Check out this [Live Demo](https://codesandbox.io/s/kind-darkness-46mt7).
 
