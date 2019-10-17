@@ -98,44 +98,31 @@ class AndroidRichPushNotificationPreview extends React.PureComponent {
               </Grid>
             </Grid>
             <Grid item xs={12}>
-              <Grid container alignItems="flex-start">
-                <Grid
-                  item
-                  xs={image === undefined || expand ? 12 : 9}
-                  sm={image === undefined || expand ? 12 : 10}
-                  md={image === undefined || expand ? 12 : 11}
-                >
-                  <Grid item>
-                    <Grid container alignItems="flex-start">
-                      {title && 
-                        <Grid
-                          item
-                          xs={12}
-                          className={classes.notificationTitle}
-                        >
-                          {parseEmojis(title, "google")}
-                        </Grid>
-                      }
-                      {message && (expand || !messageInTooltip) && 
-                        <Grid
-                          item
-                          xs={12}
-                          className={classes.notificationMessage}
-                        >
-                          {parseEmojis(message, "google")}
-                        </Grid>
-                      }
-                    </Grid>
+              <Grid container alignItems="flex-start" justify="space-between">
+                <Grid item className={image ? classes.notificationTextWithImage : classes.notificationText}>
+                  <Grid container alignItems="flex-start">
+                    {title && 
+                      <Grid
+                        item
+                        xs={12}
+                        className={classes.notificationTitle}
+                      >
+                        {parseEmojis(title, "google")}
+                      </Grid>
+                    }
+                    {message && (expand || !messageInTooltip) && 
+                      <Grid
+                        item
+                        xs={12}
+                        className={classes.notificationMessage}
+                      >
+                        {parseEmojis(message, "google")}
+                      </Grid>
+                    }
                   </Grid>
                 </Grid>
                 {image !== undefined && !expand && (
-                  <Grid
-                    item
-                    xs={3}
-                    sm={2}
-                    md={1}
-                    className={classes.notificationImagePreviewContainer}
-                  >
+                  <Grid item className={classes.notificationImagePreviewContainer}>
                     <div
                       className={classes.notificationImagePreview}
                       style={{

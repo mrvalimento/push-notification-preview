@@ -30,6 +30,12 @@ const DefaultAndroidStyles = {
     height: "15px",    
     color: "#555555",
   },
+  notificationText: {
+    width: '100%'
+  },
+  notificationTextWithImage: {
+    width: 'calc( 100% - 70px )'
+  },
   notificationTitle: {
     fontWeight: 600,
     textOverflow: "ellipsis",

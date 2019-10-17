@@ -112,13 +112,8 @@ class AppleRichPushNotificationPreview extends React.Component {
                 </Grid>
               </Grid>
               <Grid item xs={12}>
-                <Grid container alignItems="flex-start">
-                  <Grid
-                    item
-                    xs={image === undefined || expand ? 12 : 9}
-                    sm={image === undefined || expand ? 12 : 10}
-                    md={image === undefined || expand ? 12 : 11}
-                  >
+                <Grid container direction="" alignItems="flex-start" justify="space-between">
+                  <Grid item className={image ? classes.notificationTextWithImage : classes.notificationText}>
                     {title && (
                       <Grid
                         item
@@ -147,13 +142,7 @@ class AppleRichPushNotificationPreview extends React.Component {
                     )}
                   </Grid>
                   {image !== undefined && !expand && (
-                    <Grid
-                      item
-                      xs={3}
-                      sm={2}
-                      md={1}
-                      className={classes.notificationImagePreviewContainer}
-                    >
+                    <Grid className={classes.notificationImagePreviewContainer}>
                       <div
                         className={classes.notificationImagePreview}
                         style={{

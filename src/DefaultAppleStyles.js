@@ -14,7 +14,7 @@ const DefaultAppleStyles = {
     display: "block",
     fontWeight: 400,
     margin: "0px",
-    color: "#555555"
+    color: "#555555",
   },
   header: {
     display: "flex"
@@ -31,6 +31,12 @@ const DefaultAppleStyles = {
   controlIcon: {
     width: "15px",
     height: "15px"
+  },
+  notificationText: {
+    width: '100%'
+  },
+  notificationTextWithImage: {
+    width: 'calc( 100% - 70px )'
   },
   notificationTitlePreview: {
     fontWeight: 600,
@@ -73,7 +79,7 @@ const DefaultAppleStyles = {
     display: "block",
     fontWeight: 400,
     margin: "0px",
-    color: "#555555"
+    color: "#555555",
   },
   notificationActions: {
     listStyleType: "none",
@@ -82,8 +88,7 @@ const DefaultAppleStyles = {
     "& li": {
       padding: "15px",
       marginBottom: "1px",
-      backgroundColor: "white",
-      textAlign: "center"
+      backgroundColor: "white"
     },
     "& li:first-child": {
       borderTopLeftRadius: "15px",
@@ -102,7 +107,7 @@ const DefaultAppleStyles = {
     color: "black"
   },
   notificationImagePreviewContainer: {
-    textAlign: "right"
+    textAlign: "right",
   },
   notificationImagePreview: {
     float: "right",
