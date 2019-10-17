@@ -1,6 +1,6 @@
 {
   "name": "push-notification-preview",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "A Material UI based react component for previewing iOS and Android push notifications.",
   "main": "dist/index.js",
   "scripts": {

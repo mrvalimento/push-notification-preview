@@ -80,7 +80,7 @@ const DefaultAndroidStyles = {
   notificationImage: {
     width: "100%",
     height: "175px",
-    backgroundPosition: "center bottom",
+    backgroundPosition: "center center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat"
   },

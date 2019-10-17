@@ -99,7 +99,7 @@ class AndroidRichPushNotificationPreview extends React.PureComponent {
             </Grid>
             <Grid item xs={12}>
               <Grid container alignItems="flex-start" justify="space-between">
-                <Grid item className={image ? classes.notificationTextWithImage : classes.notificationText}>
+                <Grid item className={image && !expand ? classes.notificationTextWithImage : classes.notificationText}>
                   <Grid container alignItems="flex-start">
                     {title && 
                       <Grid

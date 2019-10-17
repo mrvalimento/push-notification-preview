@@ -113,7 +113,7 @@ class AppleRichPushNotificationPreview extends React.Component {
               </Grid>
               <Grid item xs={12}>
                 <Grid container direction="" alignItems="flex-start" justify="space-between">
-                  <Grid item className={image ? classes.notificationTextWithImage : classes.notificationText}>
+                  <Grid item className={image && !expand ? classes.notificationTextWithImage : classes.notificationText}>
                     {title && (
                       <Grid
                         item
